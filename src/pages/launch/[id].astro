@@ -1,0 +1,34 @@
+---
+// import type { GetStaticPaths } from "astro";
+// import { getLastedLaunches, getLaunchById } from "../../services/spacex"
+import Layout from "../../layouts/Layout.astro";
+
+// const { id } = Astro.params   
+
+let launch
+// if (id) {
+//     launch =await getLaunchById({ id})
+// }
+// console.log(launch)
+---
+
+<!-- <Layout title="Lanzamiento ${id}">
+    <article class="flex gap-y-4 flex-col">
+        <img class="w-52 h-auto"
+        src={launch?.patch.small} 
+        alt={launch?.name} />
+        <h2 class="text-4xl text-white font-bold">{launch?.flight_number}
+        </h2>
+        <p class="text-lg"> This page is in construction {launch?.details}</p>
+        {launch?.id}
+    </article>
+</Layout> -->
+
+<Layout title="In Construction">
+    <article class="flex flex-col items-center justify-center h-screen">
+        <h1 class="text-white font-bold text-5xl py-4 "> This page is in construction </h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFgDhWv-TaNQq1JRwuOu6xHZiGL_BG5ROM7A&s"
+        class="flex flex-col items-center justify-between "
+        >
+    </article>
+</Layout>
